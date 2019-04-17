@@ -1,4 +1,4 @@
-import React from "react"
+﻿import React from "react"
 import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
@@ -61,6 +61,16 @@ class BlogPostTemplate extends React.Component {
             )}
           </li>
         </ul>
+        <section class="post-full-comments">
+	  <script src="https://utteranc.es/client.js"
+          	  repo="puchake/blog"
+        	  issue-term="pathname"
+        	  label="blog-comments"
+        	  theme="github-light"
+        	  crossorigin="anonymous"
+       	 	  async>
+	  </script>
+        </section>
       </Layout>
     )
   }
